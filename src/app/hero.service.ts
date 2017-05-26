@@ -54,6 +54,7 @@ export class HeroService {
   }
 
   private handleError(error: any): Promise<any> {
+    // TODO: add real error handling
     console.error('An error occured', error);
     return Promise.reject(error.message || error);
   }
